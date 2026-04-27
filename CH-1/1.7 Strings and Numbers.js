@@ -1074,3 +1074,22 @@ console.log(calculateAge("1998-06-15"));               // Current age
  * | Date Get           | getFullYear()       | date.getFullYear()               |
  * | Template Literal   | `${var}`            | `Hello ${name}`                  |
  */
+
+
+function validateEmail(email) {
+  const cleaned = email.trim().toLowerCase();
+  const atIndex = cleaned.indexOf("@");
+  
+  if (atIndex === -1) return { isValid: false, cleanedEmail: cleaned };
+  
+  const domainPart = cleaned.slice(atIndex + 1);
+  const isValid = domainPart.includes(".") && domainPart.length > 1;
+  
+  return { isValid, cleanedEmail: cleaned };
+}
+
+// Test
+console.log(validateEmail("  User@EXAMPLE.com  "));
+// { isValid: true, cleanedEmail: "user@example.com" }
+
+

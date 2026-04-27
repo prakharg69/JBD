@@ -1,15 +1,8 @@
-let name = "Prakhar is good boy";
-let ss = name.toUpperCase();
-let a= name.includes("good");
-console.log(a);
+const getHashtags= (text)=>{
+    let data = text.split(" ");
+    return data.filter((x)=> x.startsWith("#"));
+}
+const daaa =getHashtags("hello my name is prakhar #absxcc #whatmyname")
 
-const q= 1.23345676543456;
-console.log(q.toFixed(4));
-
-console.log(Math.round(4.4));
-console.log(Math.floor(4.4));
-console.log(Math.ceil(4.4));
-
-const time = new Date();
-
-console.log(time.toLocaleDateString());
+// hello my name is prakhar #absxcc #whatmyname
+// www www wc #asd
