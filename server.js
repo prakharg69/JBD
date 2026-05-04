@@ -1,8 +1,15 @@
-const getHashtags= (text)=>{
-    let data = text.split(" ");
-    return data.filter((x)=> x.startsWith("#"));
-}
-const daaa =getHashtags("hello my name is prakhar #absxcc #whatmyname")
 
-// hello my name is prakhar #absxcc #whatmyname
-// www www wc #asd
+
+function createUser(username, score){
+    this.username = username;
+    this.score = score;
+}
+
+createUser.prototype.increment = function(){
+    this.score++;
+    return this.score;
+}
+
+const chai = new createUser("Prakhar", 25);
+
+console.log(chai.increment()); // 26

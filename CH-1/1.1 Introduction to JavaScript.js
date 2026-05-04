@@ -46,6 +46,12 @@
 // The thread pool (4 threads by default) handles operations the OS can't do async natively, like file system tasks and DNS lookups.
 // Node has no window object, no document, no DOM — those are purely browser things.
 // Node uses either CommonJS (require('fs')) or ES Modules (import fs from 'fs') for organizing code.
+//Runtime - Runtime is the phase when your program is actually running and executing code line by line.
+// Compile Time - Compile time is the phase where code is analyzed, parsed, and prepared before it runs.
+// CommonJS is a module system used in Node.js where modules are loaded synchronously using require() and exported using module.exports.
+//ES Modules is the official JavaScript module system (introduced in ES6) that uses import and export and supports static analysis and asynchronous loading.   
+// CommonJS: Runtime, synchronous module system (require)
+// ES Modules: Compile-time, modern module system (import/export)
 // The npm (Node Package Manager) ecosystem has over 2 million packages, making Node extremely powerful for building anything from web servers to CLI tools.
 
 
