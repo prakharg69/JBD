@@ -237,6 +237,26 @@ function paginateWrong(page, size) {
  */
 
 
+// ||
+
+// Falsy fallback
+// Triggers for 0, false, "", null, and undefined.
+
+
+
+// ??
+
+// Nullish fallback
+// Triggers only for null and undefined.
+
+
+
+// = default
+
+// Default parameter
+// Triggers when an argument is omitted or undefined.
+
+
 /* ============================================================================
    REST PARAMETERS
    ============================================================================ */
@@ -316,7 +336,7 @@ const user     = { lang: "fr", name: "Alice" };
 const config   = { ...defaults, ...user };
 // { theme:"dark", lang:"fr", name:"Alice" } — user wins
 
-/* ✓ Spread for cloning is shallow — nested objects are still references. 
+/* ✓ Spread for cloning is shallow — nested objects are still references.
  * For config merging, put the override last: { ...defaults, ...overrides }. 
  * Last key wins in object spread.
  */
@@ -453,3 +473,19 @@ counter.value();     // 12
  * | Destructuring params | Functions with 3+ parameters              |
  * | Closure              | Private state, factories, memoisation     |
  */
+
+
+const wow = ()=>{
+    console.log(this.name);
+    
+}
+
+const person={
+  name:"baby",
+  greet:function(){
+      setTimeout(wow, 1000);
+  }
+
+};
+
+person.greet();

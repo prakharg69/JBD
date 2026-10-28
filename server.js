@@ -1,61 +1,53 @@
-function fetchUser(user) {
-    return new Promise((resolve, reject) => {
+// const arrSplice = [1, 2, 3, 4, 5];
 
-        setTimeout(() => {
+// arrSplice.splice(2,1,   4,5,6,7);
+// console.log(arrSplice);
+// let student = {
+//     name:"prakhar",
+//     age:12
+// }
+// student.class = "high";
+// Object.seal(student);
+// student.cast="genral"
+// console.log(student);
 
-            if (user) {
-                resolve({ user, age: 12, gender: "Male" });
-            } else {
-                reject("User not found");
+
+// let date = new Date();
+// console.log(date.getDate());
+
+
+// date.setDate(date.getDate()+7);
+
+// console.log(date.getDate());
+// setTimeout(() => {
+//     console.log("hello");
+    
+// }, 3000);
+// console.log("baby");
+// const fn = new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve("thank");
+//     }, 2000);
+// })
+
+// fn.then((data)=>console.log(data));
+
+
+
+
+let word = "abacaba";
+let data = {
+        1:"abcdeptw",
+        2:"fhjlnqux",
+        3:"gikmorvy",
+        4:"sz"
+    }
+    let ans = 0;
+    for(let char in word){
+        console.log(char);
+        for(let key in data ){
+            if(data[key].includes(word[char])){
+                    ans+=key;
             }
-
-        }, 1000);
-
-    });
-}
-
-function fetchOrder(order) {
-    return new Promise((resolve, reject) => {
-
-        setTimeout(() => {
-
-            if (order) {
-                resolve({ orderId: order, qt: 12 });
-            } else {
-                reject("Order not found");
-            }
-
-        }, 1000);
-
-    });
-}
-
-function fetchPayment(PymtId) {
-    return new Promise((resolve, reject) => {
-
-        setTimeout(() => {
-
-            if (PymtId) {
-                resolve({ PymtId, status: true, orderid: 23 });
-            } else {
-                reject("Payment failed");
-            }
-
-        }, 1000);
-
-    });
-}
-
-// fetchUser("Prakhar")
-//     .then((value) => console.log(value))
-//     .catch((error) => console.log(error));
-
-// fetchOrder(23)
-//     .then((value) => console.log(value))
-//     .catch((error) => console.log(error));
-
-// fetchPayment(1234)
-//     .then((value) => console.log(value))
-//     .catch((error) => console.log(error));
-
-Promise.all([fetchUser("Prakhar"),fetchOrder(12345),fetchPayment(12)]).then(value=> console.log(value)).catch(error => console.log(error));
+        }
+    }

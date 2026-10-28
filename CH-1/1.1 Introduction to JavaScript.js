@@ -1,11 +1,13 @@
 // What is JavaScript?
-// JavaScript is a high-level, interpreted, dynamically-typed programming language originally created in 1995 by Brendan Eich at Netscape. It was designed to make web pages interactive. Today it's one of the most widely used languages in the world — running in browsers, servers, mobile apps, and even IoT devices.
+// JavaScript is a high-level, interpreted, dynamically-typed programming language originally created in 1995 by Brendan each at Netscape. It was designed to make web pages interactive. Today it's one of the most widely used languages in the world — running in browsers, servers, mobile apps, and even IoT devices.
 // Key characteristics: it is single-threaded, event-driven, and uses a prototype-based object model.
 
 
 
 // JavaScript in Backend Development
-// With the arrival of Node.js in 2009, JavaScript escaped the browser. Now you can write server-side code — handling HTTP requests, connecting to databases (MongoDB, PostgreSQL), building REST/GraphQL APIs — all in JavaScript. Frameworks like Express.js, Fastify, and NestJS power this. This made JavaScript a true full-stack language
+// With the arrival of Node.js in 2009, JavaScript escaped the browser. Now you can write server-side code — handling HTTP requests,
+//  connecting to databases (MongoDB, PostgreSQL), building REST/GraphQL APIs — all in JavaScript. Frameworks like Express.
+// js, Fastify, and NestJS power this. This made JavaScript a true full-stack language
 
 
 // Browser JavaScript

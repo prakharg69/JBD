@@ -26,6 +26,7 @@
 // - Sets up memory for variables and functions
 
 // Example: Global scope
+
 const globalVar = "I'm global";
 function globalFunc() {
   console.log("I'm a global function");
