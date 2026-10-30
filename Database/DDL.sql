@@ -252,3 +252,9 @@ DROP DATABASE IF EXISTS college;
 ```
 
 **Golden rule:** `ALTER` changes the structure, `TRUNCATE` removes all rows, and `DROP` removes the database object itself.
+
+
+
+
+show tables :- Show the list of all tables in the database
+DESCRIBE tablename; -Shows column names, data types, keys, and NULL constraints.
